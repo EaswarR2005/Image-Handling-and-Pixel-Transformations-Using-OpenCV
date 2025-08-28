@@ -86,16 +86,16 @@ plt.show()
 
 #### 8. Resize the image up by a factor of 2x.
 ```python
+resized_img = cv2.resize(cropped_img,(200*2, 200*2))
+```
+
+#### 9. Flip the cropped/resized image horizontally.
+```python
 flipped_img = cv2.flip(cropped_img, 1)
 plt.imshow(flipped_img)
 plt.title('Flipped Image')
 plt.axis('off')
 plt.show()
-```
-
-#### 9. Flip the cropped/resized image horizontally.
-```python
-# YOUR CODE HERE
 ```
 
 #### 10. Read in the image ('Apollo-11-launch.jpg').
